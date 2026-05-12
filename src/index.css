@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-leather-50: #0a0a0a;
+  --color-leather-100: #111111;
+  --color-leather-200: rgba(255, 255, 255, 0.1);
+  --color-leather-300: rgba(255, 255, 255, 0.2);
+  --color-leather-400: rgba(255, 255, 255, 0.3);
+  --color-leather-500: rgba(255, 255, 255, 0.4);
+  --color-leather-600: rgba(255, 255, 255, 0.6);
+  --color-leather-700: rgba(255, 255, 255, 0.8);
+  --color-leather-800: #e5e5e5;
+  --color-leather-900: #ffffff;
+  --color-leather-950: #ffffff;
+  
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-[#0a0a0a] text-[#e5e5e5];
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal text-white;
+  }
+}
