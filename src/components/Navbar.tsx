@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingBag, Menu, X, Search } from 'lucide-react';
+import { ShoppingBag, Menu, X, Search, User } from 'lucide-react';
 import { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { motion, AnimatePresence } from 'motion/react';
@@ -11,7 +11,11 @@ export function Navbar() {
 
   const handleCartClick = () => {
     setIsCartOpen(true);
-    navigate('/cart');
+  };
+
+  const handleLoginClick = () => {
+    navigate('/login');
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -49,6 +53,12 @@ export function Navbar() {
 
           {/* Icons */}
           <div className="flex items-center space-x-4 flex-1 justify-end">
+            <button 
+              onClick={handleLoginClick}
+              className="text-[11px] uppercase tracking-[0.2em] font-medium text-white/60 hover:text-white p-2 hidden sm:flex items-center gap-2"
+            >
+              <User className="w-4 h-4" /> Account
+            </button>
             <button className="text-[11px] uppercase tracking-[0.2em] font-medium text-white/60 hover:text-white p-2 hidden sm:flex items-center gap-2">
               <Search className="w-4 h-4" /> Search
             </button>
@@ -91,6 +101,9 @@ export function Navbar() {
                 </button>
               </div>
               <div className="flex flex-col space-y-6">
+                <button onClick={handleLoginClick} className="flex items-center gap-4 text-2xl font-serif text-white hover:text-amber-500 transition-colors text-left">
+                  <User className="w-6 h-6" /> User Login
+                </button>
                 <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-serif text-white hover:text-white/60">Home</Link>
                 <Link to="/shop" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-serif text-white hover:text-white/60">Shop All</Link>
                 <Link to="/shop?category=Wallets" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-serif text-white/70 hover:text-white pl-4 border-l border-white/20">Wallets</Link>

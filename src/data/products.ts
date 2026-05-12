@@ -21,9 +21,9 @@ export const products: Product[] = [
     isFeatured: true
   },
   {
-    id: "everyday-tote",
-    name: "The Everyday Tote",
-    price: 320,
+    id: "mayorga-tote",
+    name: "The Mayorga Tote",
+    price: 245,
     description: "Spacious enough for a 15-inch laptop and your daily essentials. Unlined interior showcasing the natural suede side of our premium leather, complete with an internal drop pocket.",
     details: [
       "Premium full-grain leather",
@@ -58,12 +58,12 @@ export const products: Product[] = [
     category: "Wallets"
   },
   {
-    id: "heritage-belt",
-    name: "Heritage Belt",
+    id: "signature-belt",
+    name: "Mayorga Signature Belt",
     price: 95,
-    description: "Built to last a lifetime. Made from a thick 10oz strap of English Bridle leather, featuring a solid brass center bar buckle.",
+    description: "Built to last a lifetime. Made from a thick 10oz strap of premium leather, featuring a solid brass center bar buckle.",
     details: [
-      "10oz English Bridle leather",
+      "10oz premium leather",
       "Solid brass buckle",
       "1.5\" width",
       "Burnished and polished edges"
@@ -76,15 +76,15 @@ export const products: Product[] = [
     isFeatured: true
   },
   {
-    id: "leather-journal-cover",
-    name: "Journal Cover",
-    price: 75,
-    description: "Elevate your writing experience. This cover ages beautifully, picking up the story of your travels and thoughts.",
+    id: "artisan-dopp-kit",
+    name: "Artisan Dopp Kit",
+    price: 110,
+    description: "A rugged, water-resistant travel companion constructed from heavy-duty waxed canvas and full grain leather accents.",
     details: [
-      "Full-grain leather cover",
-      "Includes one blank A5 moleskine notebook",
-      "Refillable design",
-      "Built-in pen loop"
+      "Water-resistant interior",
+      "Brass zipper closure",
+      "Full grain leather handle and trim",
+      "Dimensions: 9\" x 5\" x 4.5\""
     ],
     images: [
       "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800",
@@ -95,8 +95,8 @@ export const products: Product[] = [
   {
     id: "crossbody-pouch",
     name: "Crossbody Pouch",
-    price: 180,
-    description: "A compact companion for hands-free days. Perfectly sized for a phone, small wallet, keys, and lip balm.",
+    price: 165,
+    description: "A compact companion for hands-free days. Perfectly sized for a phone, small wallet, keys, and lip balm. Hand stitched with precision.",
     details: [
       "Pebbled full-grain leather",
       "Adjustable strap",
@@ -108,5 +108,23 @@ export const products: Product[] = [
       "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Bags"
+  },
+  {
+    id: "leather-key-fob",
+    name: "Braided Key Fob",
+    price: 35,
+    description: "A tough, securely braided leather key fob featuring a sturdy brass clip to attach to your belt loop or bag.",
+    details: [
+      "Braided full-grain leather",
+      "Solid brass hardware",
+      "Handmade design",
+      "Dimensions: 5\" x 1\""
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1582035985068-15024466b026?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80&w=800"
+    ],
+    category: "Accessories",
+    isFeatured: true
   }
 ];
